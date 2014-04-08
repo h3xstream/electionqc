@@ -1,0 +1,33 @@
+<html xmlns:ng="http://angularjs.org" id="ng-app" ng-app="myApp">
+<head>
+    <title>Et si on incluait les votes annulés dans les statistiques...</title>
+
+    <meta charset='utf-8'>
+
+    <link href='http://fonts.googleapis.com/css?family=Coda+Caption:800' rel='stylesheet' type='text/css'>
+    <link href='styles.css' rel='stylesheet' type='text/css'>
+    <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.2.16/angular.min.js"></script>
+    <script src="https://www.google.com/jsapi" type="text/javascript"></script>
+    <script src="controller.js"></script>
+    <script src="http://bouil.github.io/angular-google-chart/ng-google-chart.js"></script>
+
+</head>
+<body ng-controller="ElectionCtrl">
+
+
+<div class="container">
+    <h3>Et si on incluait les votes annul&eacute;s dans les statistiques...</h3>
+    <h1>Votes</h1>
+
+    <div google-chart chart="chartVotes"></div>
+
+    <h1>Participation</h1>
+
+    <div google-chart chart="chartParticipations"></div>
+
+<br/><br/><br/><hr/><br/>
+    Source: <a href="http://dgeq.org/">Directeur Général des Élections du Québec (http://dgeq.org/)</a>
+</div>
+
+</body>
+</html>
