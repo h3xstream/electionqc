@@ -70,6 +70,6 @@ app.controller('ElectionCtrl', function($scope,$http) {
 
     }
   
-    $http.jsonp("http://dgeq.org/doc/gen7-4-2014/resultats.js");
+    $http.jsonp("https://dgeq.org/resultats.js");
 });
 
